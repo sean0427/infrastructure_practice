@@ -3,12 +3,9 @@
 from setuptools import setup, find_packages
 import pathlib
 
-tests_requires = []
-
 setup(
-        name='price_function',
+        name='price_lambda',
         version='0.0.1',
-        packages=find_packages(where='src'),
-        install_requires=[],
-        test_require=tests_requires
+        packages=find_packages(where='hanlder'),
+        install_requires=[]
         )
