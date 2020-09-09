@@ -3,5 +3,5 @@ venv
 **/__pycache__/**
 .tox/**
 dist
-dist/price_lambda-0.0.1.tar.gz
+dist/*
 
