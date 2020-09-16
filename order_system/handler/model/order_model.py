@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import uuid
+
 class OrderModel():
     def __init__(self, base=None):
         self.base = base
@@ -8,5 +10,5 @@ class OrderModel():
         # query order data
         return dict(id = id)
 
-    def create(self, id):
-        return dict(id = id)
+    def create(self):
+        return dict(id = str(uuid.uuid1()))

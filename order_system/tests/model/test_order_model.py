@@ -15,4 +15,4 @@ def test_get_order_by_id(model):
     assert model.getById(TEST_ID)['id'] == TEST_ID
 
 def test_create_order(model):
-    assert model.create(TEST_ID)['id'] == TEST_ID
+    assert model.create()['id'] != None
