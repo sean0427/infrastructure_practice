@@ -9,4 +9,4 @@ class OrderModel():
         return dict(id = id)
 
     def create(self, id):
-        return id
+        return dict(id = id)

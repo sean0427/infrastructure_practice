@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
-def getDataById(id):
-    # TODO doing something create order
+from .model.order_model import OrderModel
 
-    return dict(
-            id = id
-            )
+model = OrderModel()
 
 def lambda_handler(event, context):
     id = event['id']
 
-    return getDataById(id)
+    return model.create(id)
 
