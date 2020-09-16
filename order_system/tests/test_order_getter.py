@@ -10,5 +10,3 @@ def test_get():
     response = getter.lambda_handler(TEST_REQUEST, None)
 
     assert response['id'] == TEST_REQUEST['id']
-
-

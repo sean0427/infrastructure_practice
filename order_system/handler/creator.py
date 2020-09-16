@@ -8,4 +8,3 @@ def lambda_handler(event, context):
     id = event['id']
 
     return model.create(id)
-
