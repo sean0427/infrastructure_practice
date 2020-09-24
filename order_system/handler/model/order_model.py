@@ -17,5 +17,3 @@ class OrderModel():
 
     def create(self):
         return self.collection.insert_one(dict()).inserted_id
-
-
