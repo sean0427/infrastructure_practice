@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 
+import os
+
 from pymongo import MongoClient
 
-def getClient(url='127.0.0.1', port=27965):
+def getClient(url=os.getenv('MONGO_DB'), port=os.getenv('MONGO_PORT')):
+    print("mongo server info %s %s" % (url, port))
+
     return MongoClient(url, port)
 
 class OrderModel():
@@ -17,3 +21,4 @@ class OrderModel():
 
     def create(self):
         return self.collection.insert_one(dict()).inserted_id
+
